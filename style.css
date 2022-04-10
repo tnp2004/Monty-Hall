@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+*{
+    font-size: calc(60% + .8vmin);
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+body {
+    height: 90vh;
+    background-image:  url(https://jolly-kalam-23776e.netlify.app/restaurantwebsite/assets/images/topography.svg), 
+    linear-gradient(to top, #ffe259, #ffa751);
+}
+
+.container {
+    width: 40rem;
+    margin: 10vh auto;
+    background-color: rgba(36, 32, 32, 0.877);
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+.menu-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab {
+    background-color: white;
+    padding: 1rem;
+    width: 25rem;
+}
+
+.tab .controller span {
+    background-color: rgba(36, 32, 32, 0.877);
+    padding: 3px;
+    margin-right: 5px;
+    color: white;
+}
+
+.submit-btn {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+.submit-btn:hover {
+   color: orangered;
+}
+
+.status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rule {
+    background-color: white;
+    padding: 1rem;
+    width: 10rem;
+    
+}
+
+.game {
+    background: linear-gradient( #e7e2e2, #fdfdfd);
+    padding: 10px;
+    margin-top: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.doors {
+    width: 100%;
+}
+
+.door {
+    width: 4rem;
+    cursor: pointer;
+    opacity: .9;
+}
+
+.door:hover {
+    opacity: 1;
+}
+
+.alert {
+    background-color: red;
+    color: white;
+    opacity: .8;
+}
