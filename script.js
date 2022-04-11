@@ -12,10 +12,12 @@ let idCount = 1
 const createDoors = () => {
     const doorBox = document.createElement('div')
     doorBox.classList.add('doors')
+    doorBox.setAttribute('draggable', false)
     doorBox.id = idCount++
 
     const doorImg = document.createElement('img')
     doorImg.classList.add('door')
+    doorImg.setAttribute('draggable', false)
     doorImg.src = "./picture/closedoor.png"
 
     doorBox.append(doorImg)
@@ -118,7 +120,7 @@ const newRandom = () => {
 const pick2Door = () => {
     correct.addEventListener('click', onCorrect)
     let wrong = document.querySelectorAll('.doors')[realWrong]
-    wrong.addEventListener('click', onWrong)     
+    wrong.addEventListener('click', onWrong)  
 }
 
 
