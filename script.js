@@ -118,8 +118,7 @@ const newRandom = () => {
 const pick2Door = () => {
     correct.addEventListener('click', onCorrect)
     let wrong = document.querySelectorAll('.doors')[realWrong]
-    wrong.addEventListener('click', onWrong)
-    roundPick2++       
+    wrong.addEventListener('click', onWrong)     
 }
 
 
